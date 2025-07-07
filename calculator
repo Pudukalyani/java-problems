@@ -1,0 +1,40 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+       Scanner n = new Scanner(System.in);
+       System.out.println("enter numbers for addition: ");
+       int a = n.nextInt();
+       int b = n.nextInt();
+       System.out.println(calculator.add(a,b));
+       System.out.println("enter numbers for subtraction: ");
+       int c = n.nextInt();
+       int d = n.nextInt();
+       System.out.println(calculator.sub(c,d));
+       System.out.println("enter numbers for multiplication: ");
+       int e = n.nextInt();
+       int f = n.nextInt();
+       System.out.println(calculator.multi(e,f));
+       System.out.println("enter numbers for division: ");
+       int g = n.nextInt();
+       int h = n.nextInt();
+       System.out.println(calculator.divi(g,h));
+  }
+}
+class calculator {
+    static int add(int a,int b) {
+        int result = a + b;
+        return result;
+    }
+   static int sub(int c,int d) {
+        int result = c - d;
+        return result;
+    }
+    static int multi(int e , int f) {
+        int result = e * f;
+        return result;
+    }
+   static  int divi(int g , int h) {
+        int result = g / h;
+        return result;
+    }
+}
